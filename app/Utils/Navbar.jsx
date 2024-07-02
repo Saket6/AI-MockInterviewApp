@@ -55,7 +55,7 @@ function Navbar() {
 
   return (
     <>
-      <div onClick={() => setIsOpen(!isopen)} className="bg-neutral-900 z-30 border-2 border-neutral-700 p-2 md:hidden rounded-full fixed top-7 right-5">
+      <div onClick={() => setIsOpen(!isopen)} className="bg-neutral-900 z-50 border-2 border-neutral-700 p-2 md:hidden rounded-full fixed top-7 right-5">
         {isopen ? <X /> : <Menu />}
       </div>
 
