@@ -82,26 +82,30 @@ function Questions({ Questions, activeIndex, interview, setActiveIndex }) {
                     <AlertDialogTrigger asChild>
 
                         <Button variant="destructive"> <CircleStop className="mr-2" /> End Interview</Button>
-                    
-                </AlertDialogTrigger>
-                <AlertDialogContent>
-                    <AlertDialogHeader>
-                        <AlertDialogTitle className="text-red-600">Are you sure you want to end this interview?</AlertDialogTitle>
-                        <AlertDialogDescription>
-                            This action cannot be undone. This will lead you to the feedback section where you can find the results of the interview.
-                        </AlertDialogDescription>
-                    </AlertDialogHeader>
-                    <AlertDialogFooter>
-                        <AlertDialogCancel>Cancel</AlertDialogCancel>
-                        <Link href={`/interview/${interview?.mockId}/feedback`}>
-                            <AlertDialogAction>Continue</AlertDialogAction>
-                        </Link>
-                    </AlertDialogFooter>
-                </AlertDialogContent>
-            </AlertDialog>
+
+                    </AlertDialogTrigger>
+                    <AlertDialogContent>
+                        <AlertDialogHeader>
+                            <AlertDialogTitle className="text-red-600">Are you sure you want to end this interview?</AlertDialogTitle>
+                            <AlertDialogDescription>
+                                This action cannot be undone. This will lead you to the feedback section where you can find the results of the interview.
+                            </AlertDialogDescription>
+                        </AlertDialogHeader>
+                        <AlertDialogFooter>
+                            <AlertDialogCancel>Cancel</AlertDialogCancel>
+
+                            <AlertDialogAction>
+                                <Link href={`/interview/${interview?.mockId}/feedback`}>
+                                    Continue
+                                </Link>
+                            </AlertDialogAction>
+
+                        </AlertDialogFooter>
+                    </AlertDialogContent>
+                </AlertDialog>
 
 
-        </div>
+            </div>
         </div >
     );
 }

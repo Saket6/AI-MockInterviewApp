@@ -99,9 +99,9 @@ function Feedback({ params }) {
                     </div>
 
                     <div className='dark:bg-neutral-900 p-3 md:p-5 text-lg rounded-lg border-[1px] dark:border-neutral-700 w-full'>
-                        <h1 className=' text-orange-400'>Job Role: <span className=' font-normal'>{interview?.jobPosition} </span> </h1>
-                        <h1 className=' text-orange-400'>Job Description:  <span className='dark:text-white font-normal'> {interview?.jobDesc} </span> </h1>
-                        <h1 className=' text-orange-400'>Prior Experience:  <span className='dark:text-white font-normal'> {interview?.jobExperience} years </span> </h1>
+                        <h1 className=' text-orange-400'>Job Role: <span className='text-black dark:text-white font-normal'>{interview?.jobPosition} </span> </h1>
+                        <h1 className=' text-orange-400'>Job Description:  <span className='text-black dark:text-white font-normal'> {interview?.jobDesc} </span> </h1>
+                        <h1 className=' text-orange-400'>Prior Experience:  <span className='text-black dark:text-white font-normal'> {interview?.jobExperience} years </span> </h1>
                     </div>
                 </div>
 
