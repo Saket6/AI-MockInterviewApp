@@ -94,11 +94,13 @@ function Questions({ Questions, activeIndex, interview, setActiveIndex }) {
                         <AlertDialogFooter>
                             <AlertDialogCancel>Cancel</AlertDialogCancel>
 
-                            <AlertDialogAction>
-                                <Link href={`/interview/${interview?.mockId}/feedback`}>
+
+                            <Link className="w-full" href={`/interview/${interview?.mockId}/feedback`}>
+                                <AlertDialogAction className='w-full'>
                                     Continue
-                                </Link>
-                            </AlertDialogAction>
+                                </AlertDialogAction>
+                            </Link>
+
 
                         </AlertDialogFooter>
                     </AlertDialogContent>
