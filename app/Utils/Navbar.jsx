@@ -60,7 +60,7 @@ function Navbar() {
       </div>
 
 
-      <div ref={navRef} className={`dark:bg-opacity-95 transition-all duration-500 ${!isopen ? 'translate-x-[-500px] md:translate-x-[0px] ' : "translate-x-[0px]"} fixed w-64 z-10 md:w-full border-r-2 grid grid-rows-12 h-screen md:sticky left-0 top-0 col-span-2 dark:bg-neutral-900 border-neutral-200 py-10 px-4 md:px-8 dark:border-neutral-800`}>
+      <div ref={navRef} className={`dark:bg-opacity-95 transition-all duration-500 ${!isopen ? 'translate-x-[-500px] md:translate-x-[0px] ' : "translate-x-[0px]"} fixed w-64 lg:z-10 z-50 md:w-full border-r-2 grid grid-rows-12 h-screen md:sticky left-0 top-0 col-span-2 dark:bg-neutral-900 border-neutral-200 py-10 px-4 md:px-8 dark:border-neutral-800`}>
         <div className='row-span-10 flex flex-col items-center'>
           <div>
             <Link href='/'>

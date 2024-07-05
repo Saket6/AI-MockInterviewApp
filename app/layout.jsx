@@ -29,7 +29,8 @@ export default function RootLayout({ children }) {
         >
           <ClerkContainer>
             <div className="min-h-screen grid grid-cols-1 md:grid-cols-11 justify-center" >
-              <Navbar />
+           <Navbar />
+             
               <div className="col-span-9 py-9 px-6 md:p-10">
                 
                 <Toaster />
